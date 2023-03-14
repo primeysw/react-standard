@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import Counter from "@/components/Counter";
+import Input from "@/components/Input";
 /**
  * @description 콘텐츠 컴포넌트
  */
@@ -17,6 +19,8 @@ function Contents({ title }: Props) {
     return (
         <ContentsContainer>
             <h2>{title}</h2>
+            <Counter />
+            <Input />
         </ContentsContainer>
     );
 }
