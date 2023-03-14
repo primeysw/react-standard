@@ -28,14 +28,11 @@ function App() {
         <>
             <GlobalStyle />
             <AppContainer>
-                <Header title="유선우" description="@@@@@@" />
+                <Header title="Header" description="@@@@@@" />
                 {/** String이 아닌 다른 값을 넣는 경우, Props에 지정한 타입과 일치하지 않으므로 에러 발생함타입 뿐만 아니라 오타도 잡아준다...!*/}
-                <Sidebar title="유선우 Sidebar" description="@@@@@@ Sidebar" />
-                <Contents
-                    title="유선우 Contents"
-                    description="@@@@@@ Contents"
-                />
-                <Footer title="유선우 Footer" description="@@@@@@ Footer" />
+                <Sidebar title="Sidebar" description="@@@@@@ Sidebar" />
+                <Contents title="Contents" description="@@@@@@ Contents" />
+                <Footer title="Footer" description="@@@@@@ Footer" />
             </AppContainer>
         </>
     );

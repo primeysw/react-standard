@@ -5,7 +5,7 @@ import styled from "styled-components";
 
 type Props = {
     title: string;
-    description: string;
+    description?: string;
 };
 
 const ContentsContainer = styled.main`
@@ -13,11 +13,10 @@ const ContentsContainer = styled.main`
     background-color: #ffffff;
 `;
 
-function Contents({ title, description }: Props) {
+function Contents({ title }: Props) {
     return (
         <ContentsContainer>
-            <h1>{title}</h1>
-            <h1>{description}</h1>
+            <h2>{title}</h2>
         </ContentsContainer>
     );
 }

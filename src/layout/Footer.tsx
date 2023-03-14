@@ -6,7 +6,7 @@ import styled from "styled-components";
 
 type Props = {
     title: string;
-    description: string;
+    description?: string;
 };
 
 const FooterContainer = styled.footer`
@@ -22,8 +22,7 @@ const FooterContainer = styled.footer`
 function Footer(props: Props) {
     return (
         <FooterContainer>
-            <h1>{props.title}</h1>
-            <h1>{props.description}</h1>
+            <h2>{props.title}</h2>
         </FooterContainer>
     );
 }

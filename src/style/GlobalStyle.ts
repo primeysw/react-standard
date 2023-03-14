@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 import reset from "styled-reset";
+
 const GlobalStyle = createGlobalStyle`    ${reset}    
 /* 전역 스타일 */    
 @font-face{
@@ -44,12 +45,12 @@ const GlobalStyle = createGlobalStyle`    ${reset}
     src:url("./font/Montserrat-ExtraBold.woff2") format("woff2"),url("./font/Montserrat-ExtraBold.woff") format("woff")
 }
 
-html, body {
+html, body{
     height:100%;
     font-family:"Mont Light";
 }
 
-.wrap{
+#root{
     height:100%
 }
 

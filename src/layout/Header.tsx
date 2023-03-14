@@ -10,7 +10,7 @@ import styled from "styled-components";
 // 이 부분은 리액트가 아닌 타입스크립트이다.
 type Props = {
     title: string;
-    description: string; // 필수가 아닌 경우 ?:로 정의를 해준다.
+    description?: string; // 필수가 아닌 경우 ?:로 정의를 해준다.
 };
 
 // ` 베틱 문자
@@ -22,7 +22,7 @@ const HeaderContainer = styled.header`
     background-color: #a6f78b;
 `;
 
-function Header({ title, description }: Props) {
+function Header({ title }: Props) {
     // js
 
     // 변수의 경우 function 안에서 정의하는 것이 좋다.
@@ -40,8 +40,7 @@ function Header({ title, description }: Props) {
     return (
         // 빈 태그 대신 스타일이 포함된 태그로 입혀주었다.
         <HeaderContainer>
-            <h1>{title}</h1>
-            <h1>{description}</h1>
+            <h2>{title}</h2>
         </HeaderContainer>
     );
     // 변수를 return 하는 경우 중괄호 안에 변수를 넣어준다.
